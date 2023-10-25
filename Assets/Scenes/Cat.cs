@@ -28,8 +28,8 @@ public class Cat : MonoBehaviour
         var horizontalDir = Input.GetAxis ("Horizontal");
         _rigidBody.velocity = new Vector2 (horizontalDir * MaxSpeed, _rigidBody.velocity.y);
 
-        var clamped_x = Mathf.Clamp(_rigidBody.position.x, -CameraHalfWidth, CameraHalfWidth);
-        _rigidBody.position = new Vector2(clamped_x, _rigidBody.position.y);
+        var clampedX = Mathf.Clamp(_rigidBody.position.x, -CameraHalfWidth, CameraHalfWidth);
+        _rigidBody.position = new Vector2(clampedX, _rigidBody.position.y);
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
