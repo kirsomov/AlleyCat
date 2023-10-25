@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fance
+    uniqueID: 1892117563
+    locked: 0
   - name: BackGround
     uniqueID: 240613285
     locked: 0
